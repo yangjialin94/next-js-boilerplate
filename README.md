@@ -110,4 +110,3 @@
             },
         }
         ```
-# next-js-boilerplate
