@@ -90,13 +90,22 @@
         ```
 
     - Create `tailwind.config.js` according to https://tailwindcss.com/docs/guides/nextjs
-    - Add plugin `@tailwindcss/forms` to `tailwind.config.js`
-    - In **tailwind.config.js** add
-        ```
+
+    ```
+    module.exports = {
+        content: [
+            "./pages/**/*.{js,ts,jsx,tsx}",
+            "./components/**/*.{js,ts,jsx,tsx}",
+        ],
+        theme: {
+            extend: {},
+        },
         plugins: [
             require("@tailwindcss/forms")
-        ]
-        ```
+        ],
+    }
+    ```
+
     - Remove `className={...}` from `pages/index.tsx`
     - Set Tailwind classNames in `pages/index.tsx` to match original boilerplate
 
