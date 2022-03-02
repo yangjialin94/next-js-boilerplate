@@ -101,6 +101,7 @@
     - Set Tailwind classNames in `pages/index.tsx` to match original boilerplate
 
 5. Config PostCSS
+
     - Create `postcss.config.js` and add the following:
         ```
         module.exports = {
@@ -110,3 +111,36 @@
             },
         }
         ```
+
+6. Install Recoil
+
+    ```
+    yarn add recoil
+    ```
+
+    - Edit **pages/\_app.tsx** to
+
+        ```
+        import React from "react"
+        import {
+            RecoilRoot,
+        } from "recoil"
+        import "../styles/globals.css"
+        import type { AppProps } from "next/app"
+
+        function MyApp({ Component, pageProps }: AppProps) {
+            return (
+                <RecoilRoot>
+                    <Component {...pageProps} />
+                </RecoilRoot>
+            )
+        }
+
+        export default MyApp
+        ```
+
+7. Run project in dev
+    ```
+    yarn isntall
+    yarn dev
+    ```
