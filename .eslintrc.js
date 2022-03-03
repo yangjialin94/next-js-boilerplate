@@ -36,13 +36,23 @@ module.exports = {
             "error",
             "unix"
         ],
-        "quotes": [
-            "error",
-            "double"
-        ],
         "semi": [
             "error",
             "never"
+        ],
+        "quotes": [
+            "warn",
+            "double"
+        ],
+        "jsx-quotes": [
+            "warn",
+            "prefer-double"
+        ],
+        "no-multi-spaces": [
+            "warn"
+        ],
+        "keyword-spacing": [
+            "warn"
         ],
         "object-curly-spacing": [
             "warn",
