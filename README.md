@@ -9,7 +9,7 @@
     ```
 
     ```
-    ✔ What is your project named? next_js_boilerplate
+    ✔ What is your project named? next-js-boilerplate
     ```
 
 2. Install and configure ESLint
